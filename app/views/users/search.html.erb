@@ -1,0 +1,5 @@
+<%= form_with model:@user_search ,url:'/users/show',local: true,method: :get do |f| %>
+  <p>お名前<%=f.text_field :search_name%>
+     年齢<%=f.text_field :search_age%></p>
+  <%=f.submit "送信"%>
+<%end%>
